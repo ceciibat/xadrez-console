@@ -1,13 +1,17 @@
 ﻿using System;
-using Tabuleiro;
+using tabuleiro;
+using xadrez_console;
 
-namespace Tabuleiro
+namespace tabuleiro
 {
     internal class Program
     {
         static void Main(string[] args)
         {
             Tabuleiro tab = new Tabuleiro(8 , 8);
+
+            Tela.ImprimirTabuleiro(tab);
+
             Console.ReadLine();
         }
     }
