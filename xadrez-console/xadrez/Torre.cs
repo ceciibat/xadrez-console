@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using tabuleiro;
+﻿using tabuleiro;
 
 namespace xadrez
 {
-    internal class Torre : Peca
+    internal class Torre : Peca     // herança = a Torre é uma Peca
     {
-        public Torre(Tabuleiro tab, Cor cor) : base(tab, cor)
+        public Torre(Tabuleiro tab, Cor cor) : base(tab, cor) // isso é o repasse da execução para a superclasse
         {
         }
 
