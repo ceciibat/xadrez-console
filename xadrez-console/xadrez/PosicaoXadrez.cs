@@ -4,23 +4,23 @@ namespace xadrez
 {
      class PosicaoXadrez
     {
-        public char Coluna { get; set; }
-        public int Linha { get; set;}
+        public char XadrezColuna { get; set; }    
+        public int XadrezLinha { get; set;}
 
-        public PosicaoXadrez(char coluna, int linha)
+        public PosicaoXadrez(char paramColuna, int paramLinha)
         {
-            Coluna = coluna;
-            Linha = linha;
+            XadrezColuna = paramColuna;
+            XadrezLinha = paramLinha;
         }
 
         public Posicao ToPosicao()
         {
-            return new Posicao(8 - Linha, Coluna - 'a');
+            return new Posicao(8 - XadrezLinha, XadrezColuna - 'a');
         }
 
         public override string ToString()
         {
-            return "" + Coluna + Linha;
+            return "" + XadrezColuna + XadrezLinha;
         }
     }
 }
